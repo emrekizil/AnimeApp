@@ -11,6 +11,7 @@ import com.example.animeapp.domain.AnimeEntity
 import com.example.animeapp.domain.AnimeListMapper
 import com.example.animeapp.domain.GetAnimeWithCategoriesUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -18,14 +19,14 @@ import javax.inject.Inject
 @HiltViewModel
 class HomeViewModel @Inject constructor(
     private val getAnimeWithCategoriesUseCase: GetAnimeWithCategoriesUseCase,
-    private val animeListMapper: AnimeListMapper< AnimeEntity, HomeUiData>
+    private val animeListMapper: AnimeListMapper<AnimeEntity, HomeUiData>
 ) : ViewModel() {
     private val _animeHomeUiState=MutableLiveData<HomeUiState>()
     val animeHomeUiState:LiveData<HomeUiState> get() = _animeHomeUiState
 
     fun getAnimeWithCategories(categoryQuery:String){
         viewModelScope.launch {
-            getAnimeWithCategoriesUseCase(categoryQuery).onEach {
+            getAnimeWithCategoriesUseCase(categoryQuery).collectLatest{
                 when(it){
                     is NetworkResponseState.Success->{
                         _animeHomeUiState.postValue(HomeUiState.Success(animeListMapper.map(it.result)))
@@ -42,10 +43,3 @@ class HomeViewModel @Inject constructor(
     }
 }
 
-data class HomeUiData(val name:String?,val imageUrl:String?)
-
-sealed class HomeUiState{
-    object Loading:HomeUiState()
-    data class Success(val data:List<HomeUiData>):HomeUiState()
-    data class Error(@StringRes val message:Int):HomeUiState()
-}

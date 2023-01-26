@@ -7,9 +7,9 @@ class AnimeDomainListMapperImpl @Inject constructor():AnimeListMapper<Data,Anime
     override fun map(input: List<Data>?): List<AnimeEntity> {
         return input?.map{
             AnimeEntity(
-                id=it.id,
-                name = it.attributes?.titles?.enJp,
-                imageUrl = it.attributes?.posterImage?.medium
+                id=it.id.orEmpty(),
+                name = it.attributes?.titles?.enJp.orEmpty(),
+                imageUrl = it.attributes?.posterImage?.medium.orEmpty()
             )
         } ?: emptyList()
     }

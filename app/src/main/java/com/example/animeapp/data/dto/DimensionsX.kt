@@ -5,11 +5,11 @@ import com.google.gson.annotations.SerializedName
 
 data class DimensionsX(
     @SerializedName("large")
-    val large: LargeX?,
+    val large: Large?,
     @SerializedName("medium")
     val medium: Medium?,
     @SerializedName("small")
-    val small: SmallX?,
+    val small: Small?,
     @SerializedName("tiny")
-    val tiny: TinyX?
+    val tiny: Tiny?
 )
