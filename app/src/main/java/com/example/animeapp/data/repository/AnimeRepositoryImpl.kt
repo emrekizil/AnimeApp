@@ -7,8 +7,8 @@ import com.example.animeapp.di.IoDispatcher
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
-import java.lang.Exception
 import javax.inject.Inject
+import kotlin.Exception
 
 class AnimeRepositoryImpl @Inject constructor(
     private val remoteDataSource: RemoteDataSource,
@@ -22,4 +22,14 @@ class AnimeRepositoryImpl @Inject constructor(
                 NetworkResponseState.Error(e)
             }
         }
+
+    override suspend fun getAnimeWithId(animeId: String): NetworkResponseState<Data> =
+        withContext(ioDispatcher){
+            try {
+                remoteDataSource.getAnimeWithId(animeId)
+            }catch (e:Exception){
+                NetworkResponseState.Error(e)
+            }
+        }
+
 }

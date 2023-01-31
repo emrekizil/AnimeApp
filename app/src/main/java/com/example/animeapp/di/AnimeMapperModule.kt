@@ -1,10 +1,9 @@
 package com.example.animeapp.di
 
 import com.example.animeapp.data.dto.Data
-import com.example.animeapp.domain.AnimeDomainListMapperImpl
-import com.example.animeapp.domain.AnimeEntity
-import com.example.animeapp.domain.AnimeListMapper
-import com.example.animeapp.domain.AnimeMapper
+import com.example.animeapp.domain.*
+import com.example.animeapp.ui.detail.AnimeDetailUiMapperImpl
+import com.example.animeapp.ui.detail.DetailUiData
 import com.example.animeapp.ui.home.AnimeHomeUiMapperImpl
 import com.example.animeapp.ui.home.HomeUiData
 import dagger.Binds
@@ -23,5 +22,14 @@ abstract class AnimeMapperModule {
     @Binds
     @ViewModelScoped
     abstract fun bindAnimeHomeUiMapper(animeHomeUiMapperImpl: AnimeHomeUiMapperImpl):AnimeListMapper<AnimeEntity,HomeUiData>
+
+    @Binds
+    @ViewModelScoped
+    abstract fun bindAnimeDomainSingleMapper(animeDomainSingleMapperImpl: AnimeDomainSingleMapperImpl):AnimeSingleMapper<Data,AnimeEntity>
+
+    @Binds
+    @ViewModelScoped
+    abstract fun bindAnimeDetailUiMapper(animeDetailUiMapperImpl: AnimeDetailUiMapperImpl) : AnimeSingleMapper<AnimeEntity,DetailUiData>
+
 
 }

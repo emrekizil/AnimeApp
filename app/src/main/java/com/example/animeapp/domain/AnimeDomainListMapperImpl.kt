@@ -8,8 +8,11 @@ class AnimeDomainListMapperImpl @Inject constructor():AnimeListMapper<Data,Anime
         return input?.map{
             AnimeEntity(
                 id=it.id.orEmpty(),
-                name = it.attributes?.titles?.enJp.orEmpty(),
-                imageUrl = it.attributes?.posterImage?.medium.orEmpty()
+                name = it.attributes?.canonicalTitle.orEmpty(),
+                //name = it.attributes?.titles?.enJp.orEmpty(),
+                imageUrl = it.attributes?.posterImage?.medium.orEmpty(),
+                description = it.attributes?.description.orEmpty(),
+                popularityRank = it.attributes?.popularityRank.toString(),
             )
         } ?: emptyList()
     }

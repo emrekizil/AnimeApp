@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import com.example.animeapp.R
 import com.example.animeapp.databinding.FragmentHomeBinding
 import com.example.animeapp.utility.observeTextChanges
@@ -19,7 +20,9 @@ import kotlinx.coroutines.flow.*
 @AndroidEntryPoint
 class HomeFragment : Fragment() {
 
-    private val adapter = AnimeRecyclerViewAdapter()
+    private val adapter = AnimeRecyclerViewAdapter{
+        homeUiData -> adapterOnClick(homeUiData)
+    }
 
     private val viewModel by viewModels<HomeViewModel>()
 
@@ -72,6 +75,11 @@ class HomeFragment : Fragment() {
             .onEach {
                 viewModel.getAnimeWithCategories(it)
             }.launchIn(lifecycleScope)
+    }
+    private fun adapterOnClick(homeUiData: HomeUiData){
+        println(homeUiData.id)
+        val action = HomeFragmentDirections.actionHomeFragmentToDetailFragment(homeUiData.id)
+        findNavController().navigate(action)
     }
 
     companion object {

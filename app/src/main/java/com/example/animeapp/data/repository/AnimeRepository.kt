@@ -5,4 +5,6 @@ import com.example.animeapp.data.dto.Data
 
 interface AnimeRepository {
      suspend fun getAnimeWithCategories(categoryQuery:String):NetworkResponseState<List<Data>>
+
+     suspend fun getAnimeWithId(animeId:String):NetworkResponseState<Data>
 }

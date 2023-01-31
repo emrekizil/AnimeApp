@@ -7,7 +7,7 @@ import javax.inject.Inject
 class AnimeHomeUiMapperImpl @Inject constructor():AnimeListMapper<AnimeEntity,HomeUiData> {
     override fun map(input: List<AnimeEntity>?): List<HomeUiData> {
         return input?.map {
-            HomeUiData(it.name,it.imageUrl)
+            HomeUiData(it.id,it.name,it.imageUrl)
         } ?: emptyList()
     }
 }

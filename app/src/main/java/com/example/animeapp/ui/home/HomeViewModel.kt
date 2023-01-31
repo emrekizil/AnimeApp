@@ -26,6 +26,7 @@ class HomeViewModel @Inject constructor(
 
     fun getAnimeWithCategories(categoryQuery:String){
         viewModelScope.launch {
+            //We should get latest response state because it reflects ui.It explains why we use collect latest
             getAnimeWithCategoriesUseCase(categoryQuery).collectLatest{
                 when(it){
                     is NetworkResponseState.Success->{

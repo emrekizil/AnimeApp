@@ -1,9 +1,8 @@
-package com.example.animeapp.domain
+package com.example.animeapp.ui.detail
 
-data class AnimeEntity (
-    val id:String,
+data class DetailUiData (
     val name:String,
     val imageUrl:String,
     val description:String,
     val popularityRank:String
-)
+    )

@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
+    id "androidx.navigation.safeargs"
     id 'com.google.dagger.hilt.android'
 }
 
@@ -73,6 +74,9 @@ dependencies {
 
     // Coil
     implementation("io.coil-kt:coil:2.2.2")
+
+    //Splash
+    implementation "androidx.core:core-splashscreen:1.0.0"
 
     // Test
     testImplementation 'junit:junit:4.13.2'
