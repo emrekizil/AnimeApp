@@ -24,8 +24,6 @@
             android:hint="Enter category you want"
             android:inputType="text"/>
     </com.google.android.material.textfield.TextInputLayout>
-
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/anime_list_recyclerView"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"

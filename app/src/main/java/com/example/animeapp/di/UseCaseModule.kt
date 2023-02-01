@@ -15,9 +15,9 @@ import dagger.hilt.android.scopes.ViewModelScoped
 abstract class UseCaseModule {
     @Binds
     @ViewModelScoped
-    abstract fun bindGetAnimeUseCase(animeWithCategoriesUseCaseImpl: GetAnimeWithCategoriesUseCaseImpl):GetAnimeWithCategoriesUseCase
+    abstract fun bindGetAnimeUseCase(animeWithCategoriesUseCaseImpl: GetAnimeWithCategoriesUseCaseImpl): GetAnimeWithCategoriesUseCase
 
     @Binds
     @ViewModelScoped
-    abstract fun bindGetAnimeSingleUseCase(animeWithIdUseCaseImpl: GetAnimeWithIdUseCaseImpl):GetAnimeWithIdUseCase
+    abstract fun bindGetAnimeSingleUseCase(animeWithIdUseCaseImpl: GetAnimeWithIdUseCaseImpl): GetAnimeWithIdUseCase
 }

@@ -7,7 +7,7 @@ import androidx.lifecycle.viewModelScope
 import com.example.animeapp.R
 import com.example.animeapp.data.NetworkResponseState
 import com.example.animeapp.domain.AnimeEntity
-import com.example.animeapp.domain.AnimeSingleMapper
+import com.example.animeapp.data.mappers.AnimeSingleMapper
 import com.example.animeapp.domain.GetAnimeWithIdUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.collectLatest
@@ -16,7 +16,7 @@ import javax.inject.Inject
 @HiltViewModel
 class DetailViewModel @Inject constructor(
     private val getAnimeWithIdUseCase: GetAnimeWithIdUseCase,
-    private val animeSingleMapper: AnimeSingleMapper<AnimeEntity,DetailUiData>
+    private val animeSingleMapper: AnimeSingleMapper<AnimeEntity, DetailUiData>
 
 ) : ViewModel() {
     private val _animeDetailUiState= MutableLiveData<DetailUiState>()

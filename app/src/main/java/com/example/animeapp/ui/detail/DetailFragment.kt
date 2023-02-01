@@ -50,7 +50,7 @@ class DetailFragment : Fragment() {
                     Toast.makeText(requireContext(),getString(it.message),Toast.LENGTH_LONG).show()
                 }
                 is DetailUiState.Loading->{
-                    Toast.makeText(requireContext(),"Loading Content",Toast.LENGTH_LONG).show()
+                    Toast.makeText(requireContext(),"Loading Content",Toast.LENGTH_SHORT).show()
                 }
                 is DetailUiState.Success->{
                     println(it.data)

@@ -50,11 +50,11 @@ class HomeFragment : Fragment() {
         viewModel.animeHomeUiState.observe(viewLifecycleOwner){
             when(it){
                 is HomeUiState.Error -> {
-                    Toast.makeText(requireContext(), getString(it.message), Toast.LENGTH_LONG)
+                    Toast.makeText(requireContext(), getString(it.message), Toast.LENGTH_SHORT)
                         .show()
                 }
                 HomeUiState.Loading -> {
-                    Toast.makeText(requireContext(), "Loading", Toast.LENGTH_LONG).show()
+                    Toast.makeText(requireContext(), "Loading", Toast.LENGTH_SHORT).show()
                 }
                 is HomeUiState.Success -> {
                     handleSuccessUiState(it.data)
@@ -86,9 +86,5 @@ class HomeFragment : Fragment() {
         private const val MINIMUM_SEARCH_LENGTH = 1
         private const val SEARCH_DEBOUNCE_TIME_IN_MILLISECONDS = 300L
     }
-
-
-
-
 
 }

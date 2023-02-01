@@ -1,7 +1,8 @@
 package com.example.animeapp.di
 
 import com.example.animeapp.data.dto.Data
-import com.example.animeapp.domain.*
+import com.example.animeapp.data.mappers.*
+import com.example.animeapp.domain.AnimeEntity
 import com.example.animeapp.ui.detail.AnimeDetailUiMapperImpl
 import com.example.animeapp.ui.detail.DetailUiData
 import com.example.animeapp.ui.home.AnimeHomeUiMapperImpl
@@ -17,19 +18,19 @@ import dagger.hilt.android.scopes.ViewModelScoped
 abstract class AnimeMapperModule {
     @Binds
     @ViewModelScoped
-    abstract fun bindAnimeDomainListMapper(animeDomainListMapperImpl: AnimeDomainListMapperImpl):AnimeListMapper<Data,AnimeEntity>
+    abstract fun bindAnimeRepositoryListMapper(animeRepositoryListMapperImpl: AnimeRepositoryListMapperImpl): AnimeListMapper<Data, AnimeEntity>
 
     @Binds
     @ViewModelScoped
-    abstract fun bindAnimeHomeUiMapper(animeHomeUiMapperImpl: AnimeHomeUiMapperImpl):AnimeListMapper<AnimeEntity,HomeUiData>
+    abstract fun bindAnimeHomeUiMapper(animeHomeUiMapperImpl: AnimeHomeUiMapperImpl): AnimeListMapper<AnimeEntity, HomeUiData>
 
     @Binds
     @ViewModelScoped
-    abstract fun bindAnimeDomainSingleMapper(animeDomainSingleMapperImpl: AnimeDomainSingleMapperImpl):AnimeSingleMapper<Data,AnimeEntity>
+    abstract fun bindAnimeRepositorySingleMapper(animeRepositorySingleMapperImpl: AnimeRepositorySingleMapperImpl): AnimeSingleMapper<Data, AnimeEntity>
 
     @Binds
     @ViewModelScoped
-    abstract fun bindAnimeDetailUiMapper(animeDetailUiMapperImpl: AnimeDetailUiMapperImpl) : AnimeSingleMapper<AnimeEntity,DetailUiData>
+    abstract fun bindAnimeDetailUiMapper(animeDetailUiMapperImpl: AnimeDetailUiMapperImpl) : AnimeSingleMapper<AnimeEntity, DetailUiData>
 
 
 }

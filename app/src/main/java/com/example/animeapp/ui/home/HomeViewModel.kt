@@ -1,6 +1,5 @@
 package com.example.animeapp.ui.home
 
-import androidx.annotation.StringRes
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -8,11 +7,10 @@ import androidx.lifecycle.viewModelScope
 import com.example.animeapp.R
 import com.example.animeapp.data.NetworkResponseState
 import com.example.animeapp.domain.AnimeEntity
-import com.example.animeapp.domain.AnimeListMapper
+import com.example.animeapp.data.mappers.AnimeListMapper
 import com.example.animeapp.domain.GetAnimeWithCategoriesUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.collectLatest
-import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 

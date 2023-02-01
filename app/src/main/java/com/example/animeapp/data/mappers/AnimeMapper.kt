@@ -1,4 +1,4 @@
-package com.example.animeapp.domain
+package com.example.animeapp.data.mappers
 
 
 interface AnimeMapper <I,O>{

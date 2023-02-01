@@ -1,9 +1,10 @@
-package com.example.animeapp.domain
+package com.example.animeapp.data.mappers
 
 import com.example.animeapp.data.dto.Data
+import com.example.animeapp.domain.AnimeEntity
 import javax.inject.Inject
 
-class AnimeDomainSingleMapperImpl @Inject constructor():AnimeSingleMapper<Data,AnimeEntity> {
+class AnimeRepositorySingleMapperImpl @Inject constructor(): AnimeSingleMapper<Data, AnimeEntity> {
     override fun map(input: Data?): AnimeEntity {
         return AnimeEntity(
             id=input?.id.orEmpty(),

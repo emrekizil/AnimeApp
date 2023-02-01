@@ -1,0 +1,171 @@
+{
+    "data": {
+    "id": "45745",
+    "type": "anime",
+    "links": {
+    "self": "https://kitsu.io/api/edge/anime/45745"
+},
+    "attributes": {
+    "createdAt": "2022-01-11T21:01:39.013Z",
+    "updatedAt": "2023-02-01T12:00:08.656Z",
+    "slug": "fu-airbnb",
+    "synopsis": "Airbnb and TAIKO Studios present the story of a family during Chinese New Year.\n\n(Source: Official Site)",
+    "description": "Airbnb and TAIKO Studios present the story of a family during Chinese New Year.\n\n(Source: Official Site)",
+    "coverImageTopOffset": 0,
+    "titles": {
+    "en": "Fú (Airbnb)"
+},
+    "canonicalTitle": "Fú (Airbnb)",
+    "abbreviatedTitles": [],
+    "averageRating": null,
+    "ratingFrequencies": {
+    "12": "1",
+    "14": "1"
+},
+    "userCount": 0,
+    "favoritesCount": 0,
+    "startDate": "2020-01-22",
+    "endDate": "2020-01-22",
+    "nextRelease": null,
+    "popularityRank": 18170,
+    "ratingRank": null,
+    "ageRating": "G",
+    "ageRatingGuide": null,
+    "subtype": "ONA",
+    "status": "finished",
+    "tba": null,
+    "posterImage": {
+    "tiny": "https://media.kitsu.io/anime/45745/poster_image/tiny-3a427b56cabf83bca2bf0446cfc0c36f.jpeg",
+    "large": "https://media.kitsu.io/anime/45745/poster_image/large-3fb181eb5556203f179674d9a72fcbee.jpeg",
+    "small": "https://media.kitsu.io/anime/45745/poster_image/small-5cfe20ed7423f8315018f31111d07ffe.jpeg",
+    "medium": "https://media.kitsu.io/anime/45745/poster_image/medium-9bfaa7724851866f6601f1f2c75ec99c.jpeg",
+    "original": "https://media.kitsu.io/anime/45745/poster_image/12fd8e71a8a68975fcea31841cb2bf44.jpg",
+    "meta": {
+    "dimensions": {
+    "tiny": {
+    "width": 110,
+    "height": 156
+},
+    "large": {
+    "width": 550,
+    "height": 780
+},
+    "small": {
+    "width": 284,
+    "height": 402
+},
+    "medium": {
+    "width": 390,
+    "height": 554
+}
+}
+}
+},
+    "coverImage": null,
+    "episodeCount": 1,
+    "episodeLength": 3,
+    "totalLength": 3,
+    "youtubeVideoId": "032l2ZvGSEA",
+    "showType": "ONA",
+    "nsfw": false
+},
+    "relationships": {
+    "genres": {
+    "links": {
+    "self": "https://kitsu.io/api/edge/anime/45745/relationships/genres",
+    "related": "https://kitsu.io/api/edge/anime/45745/genres"
+}
+},
+    "categories": {
+    "links": {
+    "self": "https://kitsu.io/api/edge/anime/45745/relationships/categories",
+    "related": "https://kitsu.io/api/edge/anime/45745/categories"
+}
+},
+    "castings": {
+    "links": {
+    "self": "https://kitsu.io/api/edge/anime/45745/relationships/castings",
+    "related": "https://kitsu.io/api/edge/anime/45745/castings"
+}
+},
+    "installments": {
+    "links": {
+    "self": "https://kitsu.io/api/edge/anime/45745/relationships/installments",
+    "related": "https://kitsu.io/api/edge/anime/45745/installments"
+}
+},
+    "mappings": {
+    "links": {
+    "self": "https://kitsu.io/api/edge/anime/45745/relationships/mappings",
+    "related": "https://kitsu.io/api/edge/anime/45745/mappings"
+}
+},
+    "reviews": {
+    "links": {
+    "self": "https://kitsu.io/api/edge/anime/45745/relationships/reviews",
+    "related": "https://kitsu.io/api/edge/anime/45745/reviews"
+}
+},
+    "mediaRelationships": {
+    "links": {
+    "self": "https://kitsu.io/api/edge/anime/45745/relationships/media-relationships",
+    "related": "https://kitsu.io/api/edge/anime/45745/media-relationships"
+}
+},
+    "characters": {
+    "links": {
+    "self": "https://kitsu.io/api/edge/anime/45745/relationships/characters",
+    "related": "https://kitsu.io/api/edge/anime/45745/characters"
+}
+},
+    "staff": {
+    "links": {
+    "self": "https://kitsu.io/api/edge/anime/45745/relationships/staff",
+    "related": "https://kitsu.io/api/edge/anime/45745/staff"
+}
+},
+    "productions": {
+    "links": {
+    "self": "https://kitsu.io/api/edge/anime/45745/relationships/productions",
+    "related": "https://kitsu.io/api/edge/anime/45745/productions"
+}
+},
+    "quotes": {
+    "links": {
+    "self": "https://kitsu.io/api/edge/anime/45745/relationships/quotes",
+    "related": "https://kitsu.io/api/edge/anime/45745/quotes"
+}
+},
+    "episodes": {
+    "links": {
+    "self": "https://kitsu.io/api/edge/anime/45745/relationships/episodes",
+    "related": "https://kitsu.io/api/edge/anime/45745/episodes"
+}
+},
+    "streamingLinks": {
+    "links": {
+    "self": "https://kitsu.io/api/edge/anime/45745/relationships/streaming-links",
+    "related": "https://kitsu.io/api/edge/anime/45745/streaming-links"
+}
+},
+    "animeProductions": {
+    "links": {
+    "self": "https://kitsu.io/api/edge/anime/45745/relationships/anime-productions",
+    "related": "https://kitsu.io/api/edge/anime/45745/anime-productions"
+}
+},
+    "animeCharacters": {
+    "links": {
+    "self": "https://kitsu.io/api/edge/anime/45745/relationships/anime-characters",
+    "related": "https://kitsu.io/api/edge/anime/45745/anime-characters"
+}
+},
+    "animeStaff": {
+    "links": {
+    "self": "https://kitsu.io/api/edge/anime/45745/relationships/anime-staff",
+    "related": "https://kitsu.io/api/edge/anime/45745/anime-staff"
+}
+}
+}
+}
+}

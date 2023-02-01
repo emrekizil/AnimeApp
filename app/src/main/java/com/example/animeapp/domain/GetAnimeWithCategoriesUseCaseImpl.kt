@@ -8,23 +8,8 @@ import kotlinx.coroutines.flow.flow
 import javax.inject.Inject
 
 class GetAnimeWithCategoriesUseCaseImpl @Inject constructor(
-    private val animeRepository: AnimeRepository,
-    private val animeListMapper: AnimeListMapper<Data,AnimeEntity>
+    private val animeRepository: AnimeRepository
 ): GetAnimeWithCategoriesUseCase {
-    override fun invoke(categoryQuery: String): Flow<NetworkResponseState<List<AnimeEntity>>> =
-        flow {
-            emit(NetworkResponseState.Loading)
-            when(val response= animeRepository.getAnimeWithCategories(categoryQuery)){
-                is NetworkResponseState.Error -> emit(response)
-                NetworkResponseState.Loading ->Unit
-                is NetworkResponseState.Success ->emit(
-                    NetworkResponseState.Success(
-                        animeListMapper.map(
-                            response.result
-                        )
-                    )
-                )
-            }
-        }
+    override suspend fun invoke(categoryQuery: String) = animeRepository.getAnimeWithCategories(categoryQuery)
 
 }
