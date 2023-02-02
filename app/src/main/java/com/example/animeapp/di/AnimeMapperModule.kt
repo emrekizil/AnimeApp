@@ -2,7 +2,7 @@ package com.example.animeapp.di
 
 import com.example.animeapp.data.dto.Data
 import com.example.animeapp.data.mappers.*
-import com.example.animeapp.data.mappers.module.AnimeEntity
+import com.example.animeapp.domain.module.AnimeEntity
 import com.example.animeapp.ui.detail.AnimeDetailUiMapperImpl
 import com.example.animeapp.ui.detail.DetailUiData
 import com.example.animeapp.ui.home.AnimeHomeUiMapperImpl

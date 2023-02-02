@@ -1,4 +1,4 @@
-package com.example.animeapp.data.mappers.module
+package com.example.animeapp.domain.module
 
 data class AnimeEntity (
     val id:String,

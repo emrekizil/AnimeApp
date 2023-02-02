@@ -1,6 +1,6 @@
 package com.example.animeapp.ui.detail
 
-import com.example.animeapp.data.mappers.module.AnimeEntity
+import com.example.animeapp.domain.module.AnimeEntity
 import com.example.animeapp.data.mappers.AnimeSingleMapper
 import javax.inject.Inject
 

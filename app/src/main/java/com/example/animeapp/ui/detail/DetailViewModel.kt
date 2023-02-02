@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.animeapp.R
 import com.example.animeapp.data.NetworkResponseState
-import com.example.animeapp.data.mappers.module.AnimeEntity
+import com.example.animeapp.domain.module.AnimeEntity
 import com.example.animeapp.data.mappers.AnimeSingleMapper
 import com.example.animeapp.domain.GetAnimeWithIdUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
