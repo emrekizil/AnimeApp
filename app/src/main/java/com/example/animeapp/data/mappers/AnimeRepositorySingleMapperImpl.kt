@@ -1,7 +1,7 @@
 package com.example.animeapp.data.mappers
 
 import com.example.animeapp.data.dto.Data
-import com.example.animeapp.domain.AnimeEntity
+import com.example.animeapp.data.mappers.module.AnimeEntity
 import javax.inject.Inject
 
 class AnimeRepositorySingleMapperImpl @Inject constructor(): AnimeSingleMapper<Data, AnimeEntity> {

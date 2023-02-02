@@ -3,6 +3,7 @@ package com.example.animeapp.domain
 import com.example.animeapp.animeEntity
 import com.example.animeapp.apiException
 import com.example.animeapp.data.NetworkResponseState
+import com.example.animeapp.data.mappers.module.AnimeEntity
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 

@@ -1,8 +1,7 @@
 package com.example.animeapp.data.repository
 
 import com.example.animeapp.data.NetworkResponseState
-import com.example.animeapp.data.dto.Data
-import com.example.animeapp.domain.AnimeEntity
+import com.example.animeapp.data.mappers.module.AnimeEntity
 import kotlinx.coroutines.flow.Flow
 
 interface AnimeRepository {

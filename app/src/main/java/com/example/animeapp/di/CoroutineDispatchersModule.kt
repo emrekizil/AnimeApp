@@ -1,6 +1,6 @@
 package com.example.animeapp.di
 
-import com.example.animeapp.di.IoDispatcher
+
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

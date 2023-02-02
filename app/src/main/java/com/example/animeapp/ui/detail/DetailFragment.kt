@@ -1,6 +1,6 @@
 package com.example.animeapp.ui.detail
 
-import androidx.lifecycle.ViewModelProvider
+
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,11 +9,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
-import coil.load
-import com.example.animeapp.R
 import com.example.animeapp.databinding.FragmentDetailBinding
-import com.example.animeapp.databinding.FragmentHomeBinding
-import com.example.animeapp.ui.home.HomeUiState
 import com.example.animeapp.utility.loadImage
 import dagger.hilt.android.AndroidEntryPoint
 

@@ -4,7 +4,7 @@ import com.example.animeapp.data.NetworkResponseState
 import com.example.animeapp.data.dto.Data
 import com.example.animeapp.data.source.RemoteDataSource
 import com.example.animeapp.di.IoDispatcher
-import com.example.animeapp.domain.AnimeEntity
+import com.example.animeapp.data.mappers.module.AnimeEntity
 import com.example.animeapp.data.mappers.AnimeListMapper
 import com.example.animeapp.data.mappers.AnimeSingleMapper
 import kotlinx.coroutines.CoroutineDispatcher

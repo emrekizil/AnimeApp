@@ -18,8 +18,6 @@ class RemoteDataSourceImpl @Inject constructor(private val animeApi: AnimeApi):R
     override suspend fun getAnimeWithId(animeId: String): NetworkResponseState<Data> =
         try {
             val response = animeApi.getAnimeWithId(animeId.toInt())
-            println(animeId.toInt())
-            println(response)
             NetworkResponseState.Success(response.data)
         }catch (e:Exception){
             NetworkResponseState.Error(e)

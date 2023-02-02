@@ -2,7 +2,6 @@ package com.example.animeapp.data.api
 
 import com.example.animeapp.data.dto.AnimeResponse
 import com.example.animeapp.data.dto.AnimeSingleResponse
-import com.example.animeapp.data.dto.Data
 import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query

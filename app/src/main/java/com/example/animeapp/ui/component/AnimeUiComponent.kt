@@ -7,7 +7,7 @@ import android.widget.FrameLayout
 import com.example.animeapp.databinding.LayoutAnimeBinding
 import com.example.animeapp.ui.home.HomeUiData
 import com.example.animeapp.utility.loadImage
-import java.util.jar.Attributes
+
 
 class AnimeUiComponent @JvmOverloads constructor(
     context: Context,

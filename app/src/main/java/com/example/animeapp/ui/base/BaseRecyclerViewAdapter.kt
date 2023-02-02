@@ -2,7 +2,7 @@ package com.example.animeapp.ui.base
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import java.text.FieldPosition
+
 
 abstract class BaseRecyclerViewAdapter<T:Any,VH:BaseViewHolder<T>> : RecyclerView.Adapter<VH>() {
     private val items = mutableListOf<T>()
