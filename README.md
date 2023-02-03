@@ -19,11 +19,14 @@ This is Anime App built on MVVM that users find anime on categories and details.
 <p> - UI-independent (the UI can easily be changed without changing the system)</p>
 <p> - Independent of databases, frameworks, external agencies, and libraries</p>
 
-### Data Layer: Data layer includes application data and business logic. Data layer contains APIs,dto(Data Transfer Objects), repositories, source, and mappers.
+### Data Layer:
+Data layer includes application data and business logic. Data layer contains APIs,dto(Data Transfer Objects), repositories, source, and mappers.
 
-### Domain Layer: Domain layer is responsible for handling business logic and sits between Ui and Data layers.Domain Layer includes usecases and entities.
+### Domain Layer:
+Domain layer is responsible for handling business logic and sits between Ui and Data layers.Domain Layer includes usecases and entities.
 
-### Ui Layer: Ui layer displays application data on the screen and makes Ui ready to interact with users. It contains UI-related state and Ui logic. Ui layer includes viewmodels, fragments, activities, components, states, mappers.
+### Ui Layer:
+Ui layer displays application data on the screen and makes Ui ready to interact with users. It contains UI-related state and Ui logic. Ui layer includes viewmodels, fragments, activities, components, states, mappers.
 
 # Tech Stack & Open Source Libraries
 - Minimum SDK level 21
