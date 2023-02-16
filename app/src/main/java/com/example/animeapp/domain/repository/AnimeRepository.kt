@@ -1,4 +1,4 @@
-package com.example.animeapp.data.repository
+package com.example.animeapp.domain.repository
 
 import com.example.animeapp.data.NetworkResponseState
 import com.example.animeapp.domain.module.AnimeEntity

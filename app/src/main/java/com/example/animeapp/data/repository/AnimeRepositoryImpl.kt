@@ -7,6 +7,7 @@ import com.example.animeapp.di.IoDispatcher
 import com.example.animeapp.domain.module.AnimeEntity
 import com.example.animeapp.data.mappers.AnimeListMapper
 import com.example.animeapp.data.mappers.AnimeSingleMapper
+import com.example.animeapp.domain.repository.AnimeRepository
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow

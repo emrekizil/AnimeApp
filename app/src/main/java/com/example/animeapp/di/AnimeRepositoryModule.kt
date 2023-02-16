@@ -1,6 +1,6 @@
 package com.example.animeapp.di
 
-import com.example.animeapp.data.repository.AnimeRepository
+import com.example.animeapp.domain.repository.AnimeRepository
 import com.example.animeapp.data.repository.AnimeRepositoryImpl
 import dagger.Binds
 import dagger.Module

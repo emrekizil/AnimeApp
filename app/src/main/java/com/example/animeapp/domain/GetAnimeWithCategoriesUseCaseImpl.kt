@@ -1,7 +1,7 @@
 package com.example.animeapp.domain
 
 
-import com.example.animeapp.data.repository.AnimeRepository
+import com.example.animeapp.domain.repository.AnimeRepository
 import javax.inject.Inject
 
 class GetAnimeWithCategoriesUseCaseImpl @Inject constructor(

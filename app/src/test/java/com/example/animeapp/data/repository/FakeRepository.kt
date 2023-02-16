@@ -5,6 +5,7 @@ import com.example.animeapp.animeList
 import com.example.animeapp.apiException
 import com.example.animeapp.data.NetworkResponseState
 import com.example.animeapp.domain.module.AnimeEntity
+import com.example.animeapp.domain.repository.AnimeRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 
